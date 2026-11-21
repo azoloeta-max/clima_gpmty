@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pronóstico del tiempo | Galería Plaza Monterrey</title>
+  <meta name="description" content="Pronóstico meteorológico de Monterrey y consulta de alertas para los próximos días. Galería Plaza Monterrey.">
+  <!--
+  ANTES DE PUBLICAR:
+  Sustituir SOLO el dominio de la URL siguiente con la dirección pública https
+  de este sitio (NO la URL de Apps Script). La foto debe quedar al mismo nivel
+  que index.html como miniatura_gpmty.jpg.
+
+  EJEMPLO: https://tu-sitio.pages.dev/miniatura_gpmty.jpg
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Galería Plaza Monterrey">
+  <meta property="og:title" content="Pronóstico del tiempo | Galería Plaza Monterrey">
+  <meta property="og:description" content="Consulta el clima de Monterrey y los avisos meteorológicos para los próximos días.">
+  <meta property="og:image" content="https://TU-SITIO-PUBLICO/miniatura_gpmty.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pronóstico del tiempo | Galería Plaza Monterrey">
+  <meta name="twitter:description" content="Pronóstico y alertas meteorológicas para Monterrey.">
+  <meta name="twitter:image" content="https://TU-SITIO-PUBLICO/miniatura_gpmty.jpg">
+  <style>
+    :root{color-scheme:dark;--navy:#061427;--yellow:#eeb847}
+    *{box-sizing:border-box}
+    html{min-height:100%;background:var(--navy)}
+    body{margin:0;min-height:100svh;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 70% 15%,#19344d,var(--navy));font-family:Roboto,Arial,sans-serif;color:#fff}
+    main{max-width:670px;text-align:center}
+    img{width:min(100%,620px);height:auto;border-radius:14px;box-shadow:0 16px 60px #0007}
+    h1{font-size:clamp(20px,3.1vw,29px);font-weight:600;margin:22px 0 8px}
+    p{font-size:15px;line-height:1.5;color:#cbd5e3;margin:8px 0 22px}
+    a{color:#081321;background:var(--yellow);border-radius:50px;text-decoration:none;padding:12px 21px;font-size:15px;font-weight:600;display:inline-block}
+    a:hover,a:focus-visible{background:#ffe1a0;outline:2px solid #fff6;outline-offset:3px}
+    footer{margin-top:35px;font-size:10px;letter-spacing:.05em;color:#8594a6}
+  </style>
+</head>
+<body>
+  <main>
+    <img src="miniatura_gpmty.jpg" width="1200" height="630" alt="Pronóstico del tiempo de Galería Plaza Monterrey">
+    <h1>Pronóstico del tiempo de Monterrey</h1>
+    <p>Consulta las condiciones actuales, el pronóstico de cuatro días y los avisos meteorológicos.</p>
+    <a id="abrir" href="https://script.google.com/macros/s/AKfycbzGUW2zpRDOhHQ-oODuSKW-y8Y1JImwQO3KNwp4a7kddwKwSQUCWA1IuPUTcAO2grp_/exec">Abrir aplicación meteorológica</a>
+    <footer>By Alfonso Zoloeta</footer>
+  </main>
+  <script>
+    // Los robots de vista previa no ejecutan scripts: leen los metadatos de arriba.
+    // Para personas, abrir la app después de mostrar brevemente el diseño.
+    window.setTimeout(function(){window.location.replace(document.getElementById('abrir').href);},1600);
+  </script>
+</body>
+</html>
